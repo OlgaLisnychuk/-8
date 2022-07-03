@@ -1,0 +1,35 @@
+
+.logo {
+    @extend %link;
+        
+        color: $accentColor;
+        font-family: $fontFamilyLogo;
+        font-weight: $fontWeightLogo;
+        font-size: $fontSizeLogo;
+        line-height: $lineHeightLogo;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 88px;  
+           }
+
+        @include desktop  {
+            margin-right: 93px; 
+        }
+   
+    
+    &--accent {
+        color: $titleTextColor;
+        
+    }
+
+} 
+
+.footer__logo {
+    margin-right: 0;
+
+
+&--accent {
+    color: $primaryWhiteColor;
+    
+}
+}
